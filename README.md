@@ -1,10 +1,10 @@
-# A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching — Tools & Tutorials
-
+# A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching
 This repository provides lightweight tutorials and reference code to **download**, **unpack**, **load**, **visualize**, and **reproduce derived metrics** for the dataset:
 **A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching**
 
-> **Note:** For a detailed description of the dataset please visit the dataset descriptor paper: []. The dataset files themselves (HDF5 + ultrasound videos + metadata)
- are hosted on figshare and are not stored in this GitHub repository.
+For a detailed description of the dataset please visit the dataset descriptor paper: [].
+
+The dataset files themselves (HDF5 + ultrasound videos + metadata) are hosted on figshare and are not stored in this GitHub repository.
 
 ---
 
@@ -16,9 +16,9 @@ This repository provides lightweight tutorials and reference code to **download*
 
 The figshare deposit contains:
 
-- `dataset.csv` — participant-level metadata table (**one row per participant**) with paths to the corresponding data files  
-- `hdf5_files/` — **36 (1 per participant) `.h5` files** containing synchronized timeseries, event annotations, derived signals, and metadata  
-- `us_videos/` — **36 (1 per participant) ultrasound `.mp4` videos** (60 fps)  
+- `dataset.csv` — participant-level metadata table (one row per participant) with paths to the corresponding data files  
+- `hdf5_files/` — 36 (one per participant) `.h5` files containing synchronized timeseries, event annotations, derived signals, and metadata  
+- `us_videos/` — 36 (one per participant) ultrasound `.mp4` videos (60 fps)  
 - `exceptions.txt` — subject-specific notes/exceptions (missing channels, irregular segments, etc.)  
 - `hdf5_structure.txt` — overview of the HDF5 internal layout (groups/datasets/attributes)  
 - `SHA256SUMS.txt` — checksum manifest (optional integrity verification)  
