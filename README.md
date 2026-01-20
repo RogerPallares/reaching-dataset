@@ -1,4 +1,5 @@
 # A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching
+
 This repository provides lightweight tutorials and reference code to **download**, **unpack**, **load**, **visualize**, and **reproduce derived metrics** for the dataset:
 **A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching**
 
@@ -22,7 +23,7 @@ The figshare deposit contains:
 - `exceptions.txt` — subject-specific notes/exceptions (missing channels, irregular segments, etc.)  
 - `hdf5_structure.txt` — overview of the HDF5 internal layout (groups/datasets/attributes)  
 - `SHA256SUMS.txt` — checksum manifest (optional integrity verification)  
-- `Dataset.zip` — archive containing the data
+- `data.zip` — archive containing the data
 
 ---
 
@@ -41,6 +42,8 @@ reaching-dataset/
 ├── LICENSE
 └── README.md
 ```
+
+For the complete definition of every recorded and derived variable (names, descriptions, units, and array shapes), see the manuscript [Supplementary Materials](https://), Section “HDF5 File Description.
 
 ---
 
@@ -138,6 +141,7 @@ If you use this dataset in your research, please cite:
 > [Authors]. (2025). A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching. *[Journal]*. https://doi.org/10.6084/m9.figshare.31030252
 
 **BibTeX format:**
+
 ```bibtex
 @article{reaching_dataset_2026,
   title={A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching},
