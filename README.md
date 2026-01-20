@@ -89,7 +89,7 @@ After extraction, your dataset folder should contain:
 
 #### MATLAB tutorial
 
-**Requirements:** MATLAB (Live Script support)
+**Requirements:** MATLAB R2024b (Live Script support)
 
 Steps:
 
