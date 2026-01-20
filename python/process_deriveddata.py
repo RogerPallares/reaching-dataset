@@ -1,9 +1,24 @@
-import matplotlib.pyplot as plt
-import pysampled as ps
-import h5py
-import argparse
-import numpy as np
-from sklearn.decomposition import PCA
+try:
+    import matplotlib.pyplot as plt
+    import pysampled as ps
+    import h5py
+    import argparse
+    import numpy as np
+    from sklearn.decomposition import PCA
+except ImportError as e:
+    missing = str(e).split()[-1].strip("'")
+    msg = f"""
+        Missing dependency: {missing}
+
+        Please install requirements, e.g.:
+
+        conda create -n reaching_ds python=3.10 -y
+        conda activate reaching_ds
+        pip install numpy matplotlib h5py jupyterlab ipympl pysampled scikit-learn
+
+        Then re-run this script.
+        """
+    raise SystemExit(msg) from e
 
 
 PARAMS = {
