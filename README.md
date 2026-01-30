@@ -17,13 +17,16 @@ The dataset files themselves (HDF5 + ultrasound videos + metadata) are hosted on
 
 The figshare deposit contains:
 
-- `dataset.csv` — participant-level metadata table (one row per participant) with paths to the corresponding data files  
-- `hdf5_files/` — 36 (one per participant) `.h5` files containing synchronized timeseries, event annotations, derived signals, and metadata  
-- `us_videos/` — 36 (one per participant) ultrasound `.mp4` videos (60 fps)  
-- `exceptions.txt` — subject-specific notes/exceptions (missing channels, irregular segments, etc.)  
-- `hdf5_structure.txt` — overview of the HDF5 internal layout (groups/datasets/attributes)  
-- `SHA256SUMS.txt` — checksum manifest (optional integrity verification)  
-- `data.zip` — archive containing the data
+- `dataset.csv` - participant-level metadata table (one row per participant) with paths to the corresponding data files
+- `data.zip` - archive containing the data
+  - `hdf5_files/` - 36 (one per participant) `.h5` files containing synchronized timeseries, event annotations, derived signals, and metadata  
+  - `us_videos/` - 36 (one per participant) ultrasound `.mp4` videos (60 fps)  
+  - `exceptions.txt` - subject-specific notes/exceptions (missing channels, irregular segments, etc.)  
+  - `hdf5_structure.txt` - overview of the HDF5 internal layout (groups/datasets/attributes)  
+- `README.txt` - high-level documentation and pointers
+- `SHA256SUMS.txt` - checksum manifest (optional integrity verification)  
+
+For the complete definition of every recorded and derived variable (names, descriptions, units, and array shapes), see the manuscript [Supplementary Materials](https://), Section HDF5 File Description.
 
 ---
 
@@ -43,8 +46,6 @@ reaching-dataset/
 └── README.md
 ```
 
-For the complete definition of every recorded and derived variable (names, descriptions, units, and array shapes), see the manuscript [Supplementary Materials](https://), Section “HDF5 File Description.
-
 ---
 
 ## Quick start
@@ -53,7 +54,7 @@ For the complete definition of every recorded and derived variable (names, descr
 
 #### Option A: Manual download
 
-Download the dataset from figshare and unzip it to a local folder.
+Download the dataset from [figshare](https://doi.org/10.6084/m9.figshare.31030252) and unzip it to a local folder.
 
 #### Option B: Using download scripts
 
@@ -129,7 +130,7 @@ python python/process_deriveddata.py --input /path/to/dataset/hdf5_folder/subjec
 
 Please review `exceptions.txt` before running analyses across all participants. This file documents subject-specific notes, missing channels, and other important exceptions.
 
-The HDF5 internal structure (fields, units, and array shapes) is documented in `hdf5_structure.txt` and in the Supplementary Materials of the dataset descriptor paper.
+The HDF5 internal structure (fields, units, and array shapes) is documented in `hdf5_structure.txt` and in the [Supplementary Materials](https://) of the dataset descriptor paper.
 
 ---
 
@@ -138,17 +139,16 @@ The HDF5 internal structure (fields, units, and array shapes) is documented in `
 If you use this dataset in your research, please cite:
 
 **Plain text format:**
-> [Authors]. (2025). A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching. *[Journal]*. https://doi.org/10.6084/m9.figshare.31030252
-
+> 
 **BibTeX format:**
 
 ```bibtex
 @article{reaching_dataset_2026,
   title={A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching},
-  author={[Authors to be added]},
-  journal={[Journal to be added]},
+  author={},
+  journal={},
   year={2026},
-  doi={10.6084/m9.figshare.31030252}
+  doi={}
 }
 ```
 
