@@ -1,7 +1,7 @@
 # A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching
 
 This repository provides lightweight tutorials and reference code to **download**, **unpack**, **load**, **visualize**, and **reproduce derived metrics** for the dataset:
-**A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching**
+***A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching***
 
 For a detailed description of the dataset please visit the dataset descriptor paper: [].
 
@@ -12,8 +12,6 @@ The dataset files themselves (HDF5 + ultrasound videos + metadata) are hosted on
 ## Dataset (figshare)
 
 - **Dataset landing page / DOI:** [https://doi.org/10.6084/m9.figshare.31030252](https://doi.org/10.6084/m9.figshare.31030252)
-
----
 
 The figshare deposit contains:
 
