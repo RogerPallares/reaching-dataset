@@ -105,7 +105,7 @@ Create environment and install dependencies:
 ```bash
 conda create -n <enviroment_name> python=3.10 -y
 conda activate <enviroment_name>
-pip install opencv-python numpy matplotlib h5py jupyterlab ipympl pysampled scikit-learn && download-airpls
+pip install opencv-python numpy matplotlib h5py jupyterlab ipympl scikit-learn pysampled && download-airpls
 ```
 
 Open the tutorial:
