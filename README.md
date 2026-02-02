@@ -105,7 +105,7 @@ Create environment and install dependencies:
 ```bash
 conda create -n <enviroment_name> python=3.10 -y
 conda activate <enviroment_name>
-pip install opencv-python numpy matplotlib h5py jupyterlab ipympl pysampled scikit-learn
+pip install opencv-python numpy matplotlib h5py jupyterlab ipympl pysampled scikit-learn && download-airpls
 ```
 
 Open the tutorial:
@@ -119,7 +119,7 @@ jupyter lab python/hdf5_tutorial.ipynb
 To reproduce the derived metrics (tremor detection, arm speed, EMG envelopes, etc.) from the original recordings:
 
 ```bash
-python python/process_deriveddata.py --input /path/to/dataset/hdf5_folder/subject_id.h5 --tremor_location <triceps, biceps or palm>
+python python/process_deriveddata.py --input /path/to/dataset/hdf5_folder/subject_id.h5 --tremor_location triceps
 ```
 
 ---
