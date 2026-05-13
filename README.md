@@ -3,7 +3,7 @@
 This repository provides lightweight tutorials and reference code to **download**, **unpack**, **load**, **visualize**, and **reproduce derived metrics** for the dataset:
 ***A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching***
 
-For a detailed description of the dataset please visit the dataset descriptor paper: [].
+For a detailed description of the dataset please visit the dataset descriptor paper: [Pallarès-López et al., 2026](https://doi.org/10.1038/s41597-026-07019-3).
 
 The dataset files themselves (HDF5 + ultrasound videos + metadata) are hosted on figshare and are not stored in this GitHub repository.
 
@@ -137,16 +137,19 @@ The HDF5 internal structure (fields, units, and array shapes) is documented in `
 If you use this dataset in your research, please cite:
 
 **Plain text format:**
-> 
+> Pallarès-López, R., Folgado, D., Magana-Salgado, U. et al. A multimodal biomechanics dataset with synchronized kinematics and internal tissue motions during reaching. Sci Data 13, 709 (2026). https://doi.org/10.1038/s41597-026-07019-3
+
 **BibTeX format:**
 
 ```bibtex
-@article{reaching_dataset_2026,
-  title={A Multimodal Biomechanics Dataset with Synchronized Kinematics and Internal Tissue Motions during Reaching},
-  author={},
-  journal={},
+@article{pallareslopez2026multimodal,
+  title={A multimodal biomechanics dataset with synchronized kinematics and internal tissue motions during reaching},
+  author={Pallarès-López, R. and Folgado, D. and Magana-Salgado, U. and others},
+  journal={Scientific Data},
+  volume={13},
+  pages={709},
   year={2026},
-  doi={}
+  doi={10.1038/s41597-026-07019-3}
 }
 ```
 
