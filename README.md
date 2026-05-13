@@ -24,7 +24,7 @@ The figshare deposit contains:
 - `README.txt` - high-level documentation and pointers
 - `SHA256SUMS.txt` - checksum manifest (optional integrity verification)  
 
-For the complete definition of every recorded and derived variable (names, descriptions, units, and array shapes), see the manuscript [Supplementary Materials](https://), Section HDF5 File Description.
+For the complete definition of every recorded and derived variable (names, descriptions, units, and array shapes), see the manuscript [Supplementary Materials](https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-026-07019-3/MediaObjects/41597_2026_7019_MOESM1_ESM.pdf), Section HDF5 File Description.
 
 ---
 
@@ -103,8 +103,8 @@ Steps:
 Create environment and install dependencies:
 
 ```bash
-conda create -n <enviroment_name> python=3.10 -y
-conda activate <enviroment_name>
+conda create -n <environment_name> python=3.10 -y
+conda activate <environment_name>
 pip install opencv-python numpy matplotlib h5py jupyterlab ipympl scikit-learn pysampled && download-airpls
 ```
 
@@ -119,7 +119,7 @@ jupyter lab python/hdf5_tutorial.ipynb
 To reproduce the derived metrics (tremor detection, arm speed, EMG envelopes, etc.) from the original recordings:
 
 ```bash
-python python/process_deriveddata.py --input /path/to/dataset/hdf5_folder/subject_id.h5 --tremor_location triceps
+python python/process_deriveddata.py --input /path/to/dataset/hdf5_files/subject_id.h5 --tremor_location triceps
 ```
 
 ---
@@ -128,7 +128,7 @@ python python/process_deriveddata.py --input /path/to/dataset/hdf5_folder/subjec
 
 Please review `exceptions.txt` before running analyses across all participants. This file documents subject-specific notes, missing channels, and other important exceptions.
 
-The HDF5 internal structure (fields, units, and array shapes) is documented in `hdf5_structure.txt` and in the [Supplementary Materials](https://) of the dataset descriptor paper.
+The HDF5 internal structure (fields, units, and array shapes) is documented in `hdf5_structure.txt` and in the [Supplementary Materials](https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-026-07019-3/MediaObjects/41597_2026_7019_MOESM1_ESM.pdf) of the dataset descriptor paper.
 
 ---
 
@@ -137,14 +137,14 @@ The HDF5 internal structure (fields, units, and array shapes) is documented in `
 If you use this dataset in your research, please cite:
 
 **Plain text format:**
-> Pallarès-López, R., Folgado, D., Magana-Salgado, U. et al. A multimodal biomechanics dataset with synchronized kinematics and internal tissue motions during reaching. Sci Data 13, 709 (2026). https://doi.org/10.1038/s41597-026-07019-3
+> Pallarès-López, R., Folgado, D., Magana-Salgado, U., Rosendorf, J., Ryu, E., Feigin-Almon, M., Gamboa, H., Daniel, L., Anthony, B. W. & Namburi, P. A multimodal biomechanics dataset with synchronized kinematics and internal tissue motions during reaching. Sci Data 13, 709 (2026). https://doi.org/10.1038/s41597-026-07019-3
 
 **BibTeX format:**
 
 ```bibtex
 @article{pallareslopez2026multimodal,
   title={A multimodal biomechanics dataset with synchronized kinematics and internal tissue motions during reaching},
-  author={Pallarès-López, R. and Folgado, D. and Magana-Salgado, U. and others},
+  author={Pallarès-López, Roger and Folgado, Duarte and Magana-Salgado, Uriel and Rosendorf, Jessica and Ryu, Enya and Feigin-Almon, Micha and Gamboa, Hugo and Daniel, Luca and Anthony, Brian W. and Namburi, Praneeth},
   journal={Scientific Data},
   volume={13},
   pages={709},
